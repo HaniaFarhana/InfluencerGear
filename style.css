@@ -6,7 +6,7 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 main{
-    margin: 30px 80px;
+    margin: 30px 150px;
 }
 .headerbody{
     display: flex;
@@ -53,4 +53,105 @@ button{
     background-repeat: no-repeat;
     object-fit: cover;
     padding: 30px;
+}
+.link{
+    margin-top: 100px;
+}
+.linkContent{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+    align-items: center;
+}
+.link hr{
+    opacity: .30;
+    color: rgb(229, 217, 217);
+}
+.collections{
+    margin-top: 100px;
+}
+.collectionHeader h1{
+    text-align: center;
+}
+.collectionContainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 50px;
+    gap: 30px;
+   
+}
+.collection{
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px rgb(203, 197, 197);
+}
+.colletionImg{
+    width: 100%;
+}
+.collectionImg img{
+    width: 100%;
+}
+.money{
+    font-size: 20px;
+    font-weight: 600;
+}
+.rating{
+    font-size: 15px;
+}
+.rating i{
+    color: gold;
+
+}
+.des{
+    font-size: 15px;
+}
+.seeMore{
+    text-decoration: none;
+    color: rgb(243, 46, 79);
+    text-align: right;
+    display: block;
+    margin: 20px;
+    font-weight: 600;
+}
+.feature{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+.featureImg{
+    width: 30%;
+}
+.featureImg img{
+    width: 100%;
+}
+.featureDes{
+    width: 60%;
+}
+.featureDes h1{
+    font-size: 30px;
+}
+.featureDes p{
+    font-size: 15px;
+    opacity: .75;
+    margin-right: 40px;
+}
+.footerbody{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footerbody h1{
+    margin-bottom: 0;
+}
+.copyright{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    opacity: 0.75;
+}
+.ip i{
+    margin: 5px;
+    font-size: 20px;
 }
