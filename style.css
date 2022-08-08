@@ -1,0 +1,56 @@
+/* font-family: 'Oleo Script Swash Caps', cursive; */
+/* font-family: 'Open Sans', sans-serif; */
+
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+main{
+    margin: 30px 80px;
+}
+.headerbody{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerName h1{
+    padding: 20px;
+    font-size: 20px;
+}
+.headerContent a{
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+.bannerContent{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 50px;
+    
+}
+.bannerContent h1{
+    font-size: 50px;
+    margin-bottom: 0;
+}
+button{
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: rgb(237, 40, 106);
+    border: 0;
+    color: white;
+}
+.bannerImage{
+    background-image: url(./images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    padding: 30px;
+}
