@@ -3,6 +3,7 @@
 
 body{
     margin: 0;
+    padding: 0;
     font-family: 'Open Sans', sans-serif;
 }
 main{
@@ -12,6 +13,9 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.hiddenicon{
+    display: none;
 }
 .headerName h1{
     padding: 20px;
@@ -27,14 +31,15 @@ main{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 80%;
-    margin: 0 auto;
+    width: 90%;
+    margin: 20px auto;
 }
 .bannerContent{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding-right: 50px;
+    width: 50%;
     
 }
 .bannerContent h1{
@@ -51,14 +56,18 @@ button{
 .bannerImage{
     background-image: url(./images/Circle\ design.svg);
     background-repeat: no-repeat;
-    object-fit: cover;
-    padding: 30px;
+    background-size:contain;
+    width: 50%;
+}
+.bannerImage img{
+    width: 100%;
 }
 .link{
     margin-top: 100px;
 }
 .linkContent{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 20px;
     align-items: center;
@@ -114,18 +123,13 @@ button{
     font-weight: 600;
 }
 .feature{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     align-items: center;
     gap: 80px;
 }
-.featureImg{
-    width: 30%;
-}
 .featureImg img{
     width: 100%;
-}
-.featureDes{
-    width: 60%;
 }
 .featureDes h1{
     font-size: 30px;
@@ -138,6 +142,11 @@ button{
 .footerbody{
     background-color: black;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerdes{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -154,4 +163,107 @@ button{
 .ip i{
     margin: 5px;
     font-size: 20px;
+}
+@media  screen and (min-width: 768px) and (max-width: 1023px) {
+    main{
+        margin: 0 20px;
+    }
+    .collectionContainer{
+        grid-template-columns: 1fr 1fr;
+    }
+    .hide-for-tab{
+        display: none;
+
+    }
+    .linkContent{
+        gap: 20px;
+    }
+    .feature{
+        margin-bottom: 50px;
+    }
+    .featureImg{
+        height: 100%;
+    }
+    .featureImg img{
+        height: 100%;
+    }
+    .footerbody{
+        min-height: 250px;
+    }
+    
+    
+}
+@media  screen and (max-width: 767px){
+    main{
+        margin: 0 10px;
+    }
+    .headerbody{
+        padding: 0 15px ;
+    }
+    .hide-for-phone{
+        display: none;
+    }
+    .hiddenicon{
+        display: block;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .bannerImage{
+        width: 100%;
+    }
+    .bannerContent{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        padding: 0;
+    }
+    .bannerContent h1{
+        font-size: 30px;
+    }
+    .bannerContent p{
+        font-size: 15px;
+    }
+    .link{
+        margin-top: 50px;
+    }
+    .linkContent{
+        gap: 20px;
+    }
+    .linkContent img{
+        width: 60px;
+        
+    }
+    .collections{
+        margin-top: 50px;
+    }
+    .collectionContainer{
+        grid-template-columns: 1fr;
+    }
+    .seeMore{
+        text-align: center;
+    }
+    .feature{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .featureDes{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .footerdes h1{
+        font-size: 20px;
+    }
+    .copyright{
+        text-align: center;
+        font-size: 12px;
+    }
+    .ip{
+       
+        margin: 5px 0;
+    }
+    .ip i{
+        font-size: 15px;
+    }
+
 }
